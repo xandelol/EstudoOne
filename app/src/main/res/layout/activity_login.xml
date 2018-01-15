@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="xandao.com.estudoone.LoginActivity">
+    tools:context="xandao.com.estudoone.LoginActivity"
+    android:animateLayoutChanges="true">
 
     <ImageView
         android:layout_width="match_parent"
@@ -54,6 +55,7 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/login_screen_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -75,5 +77,61 @@
             android:textSize="14sp"
             android:textColor="@color/colorWhite"/>
     </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/login_screen_enter_form"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-350dp">
+
+        <LinearLayout
+
+            android:layout_width="300dp"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+
+            <EditText
+                android:id="@+id/login_screen_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:hint="E-Mail"
+                android:textSize="14sp"
+                android:backgroundTint="@android:color/transparent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorGray"/>
+
+            <EditText
+                android:id="@+id/login_screen_pass_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Senha"
+                android:textSize="14sp"
+                android:backgroundTint="@android:color/transparent"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/login_screen_pass_forgoten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:text="Esqueci a senha"
+            android:textColor="@color/colorWhite"
+            android:onClick="loginForgoten"/>
+    </RelativeLayout>
 
 </RelativeLayout>

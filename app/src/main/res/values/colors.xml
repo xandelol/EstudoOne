@@ -4,9 +4,10 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#FFFFFF</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#D03133</color>
     <color name="colorOrange">#EC3F17</color>
     <color name="colorRedSignUp">#D03133</color>
     <color name="colorBlue">#3C5A9A</color>
     <color name="colorSignUp">#EEEEEE</color>
+    <color name="colorGray">#8bc9c9c9</color>
 </resources>

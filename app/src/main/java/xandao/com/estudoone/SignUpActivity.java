@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -23,6 +24,6 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     public void signupFace(View v){
-
+        Toast.makeText(this,"EM BREVE!!!",Toast.LENGTH_SHORT).show();
     }
 }
