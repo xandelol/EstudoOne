@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xandao.com.estudoone.MainActivity"
+    android:background="@color/colorDefaultBack"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.EstudoOne.AppBarOverlay"
+        android:id="@+id/appBarLayout"
+        android:background="@color/transparent"
+        app:popupTheme="@style/Theme.EstudoOne.PopUpOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorDefaultBack">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/main_screen_search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <ImageView
+                        android:id="@+id/main_screen_back_search"
+                        android:layout_width="36dp"
+                        android:layout_height="56dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_back_arrow"
+                        android:onClick="hideSearchBar"/>
+                    <EditText
+                        android:id="@+id/main_screen_edit_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Pesquisar"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="#707070"
+                        android:background="@color/transparent"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/main_screen_logo"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/estudoonelogo" />
+
+                <ImageView
+                    android:id="@+id/main_screen_search_button"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_search"
+                    android:onClick="showSearchBar"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/main_screen_content_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp">
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/main_screen_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorDefaultBack"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:itemTextColor="@drawable/nav_item_color_state"
+        app:menu="@menu/bottom_navigation_items"
+        android:elevation="5dp"/>
+
+</RelativeLayout>

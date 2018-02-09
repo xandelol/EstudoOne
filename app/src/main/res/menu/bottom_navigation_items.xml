@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/bottom_my_data"
+        android:enabled="true"
+        android:title="Meus Dados"
+        android:icon="@drawable/ic_helmet"
+        app:showAsAction="always" />
+    <item android:id="@+id/bottom_subscription"
+        android:enabled="true"
+        android:title="Incrições"
+        android:icon="@drawable/ic_tickets"
+        app:showAsAction="always" />
+    <item android:id="@+id/bottom_events"
+        android:enabled="true"
+        android:title="Eventos"
+        android:icon="@drawable/ic_racing_flags"
+        app:showAsAction="always" />
+    <item android:id="@+id/bottom_notifications"
+        android:enabled="true"
+        android:title="Notificações"
+        android:icon="@drawable/ic_notification"
+        app:showAsAction="always" />
+    <item android:id="@+id/bottom_more"
+        android:enabled="true"
+        android:title="Mais"
+        android:icon="@drawable/ic_more"
+        app:showAsAction="always" />
+</menu>

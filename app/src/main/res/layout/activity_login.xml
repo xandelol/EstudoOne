@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="xandao.com.estudoone.LoginActivity"
-    android:animateLayoutChanges="true"
-    android:windowSoftInputMode="adjustResize">
+    android:animateLayoutChanges="true">
 
     <ImageView
         android:layout_width="match_parent"
@@ -84,7 +83,8 @@
         android:layout_height="270dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="-350dp">
+        android:layout_marginBottom="-350dp"
+        android:visibility="gone">
 
         <LinearLayout
 

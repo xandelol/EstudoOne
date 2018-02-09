@@ -47,6 +47,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(firstStep) {
+                    enterForm.setVisibility(View.VISIBLE);
                     button.animate().translationY(250);
                     faceLogin.animate().translationY(500);
                     signup.animate().translationY(500);
@@ -66,6 +67,7 @@ public class LoginActivity extends AppCompatActivity {
             faceLogin.animate().translationY(0);
             signup.animate().translationY(0);
             enterForm.animate().translationY(0);
+            enterForm.setVisibility(View.GONE);
             firstStep = true;
         }else{
             super.onBackPressed();
@@ -74,7 +76,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private void goMain(){
         if(validate()){
-            Toast.makeText(LoginActivity.this,"ENTRAR EM BREVE!!!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         }
     }
 

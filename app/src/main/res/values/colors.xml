@@ -8,6 +8,7 @@
     <color name="colorOrange">#EC3F17</color>
     <color name="colorRedSignUp">#D03133</color>
     <color name="colorBlue">#3C5A9A</color>
-    <color name="colorSignUp">#EEEEEE</color>
+    <color name="colorDefaultBack">#EEEEEE</color>
     <color name="colorGray">#8bc9c9c9</color>
+    <color name="transparent">#00FFFFFF</color>
 </resources>
